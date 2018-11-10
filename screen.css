@@ -1,0 +1,129 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Begin site styles below */
+html {
+  background-color: #e5e5e5;
+  font-family: "Gill Sans", "Product Sans", sans-serif;
+  font-size: 1.125em; /* 18px / 16px = 1.125em */
+  line-height: 1.2222222em; /* 22px / 18px = 1.2222..em */
+  padding-top: 0.611111111em;
+  padding-left: 1.2222222em;
+  padding-right: 1.2222222em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 0.61111111em;
+}
+
+h1 {
+  font-size: 1.555555556em;
+  color: #C70039 ;
+}
+
+h2 {
+  font-size: 1.11111111em;
+}
+h3 {
+  font-size: 1.16666667em;
+  text-align: left;
+}
+
+footer {
+  font-size: 0.7777778em;
+  font-weight: bold;
+  padding-top: 0.611111111em;
+}
+img {
+  display: block;
+  height: auto;
+  image-orientation: from-image;
+  max-width: 100%;
+  padding-bottom: 0.611111111111em;
+
+}
+
+nav a {
+  background-color: #280e0e;
+  border-radius: 15px;
+  color: #C70039;
+  display: block;
+  font-size: 1.25em;
+  padding: 0.333em;
+  text-decoration: none;
+}
+
+nav ul li {
+  text-align: center;
+  padding-bottom: 11px;
+}
+
+ul {
+  padding-bottom: 0.6111111111em;
+}
+
+.adidas-images {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 5px
+}
+
+.adidas-images li{
+  flex: 1 1 300px;
+  padding-top: 5px;
+}
+
+.nike-images {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 5px
+}
+
+.nike-images li{
+  flex: 1 1 300px;
+  padding-top: 5px;
+}
+
+@media screen and (min-width: 600px){
+  img{
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  .adidas-images{
+    flex: 50%;
+    padding: 5px;
+  }
+  .nike-images{
+    flex: 50%;
+    padding: 5px;
+    }
+
+  nav{
+    padding: 0 0.8em;
+  }
+
+  nav a{
+    padding: 0 1em;
+  }
+
+  nav ul {
+    display: flex;
+    margin: 0 -0.25em;
+    }
+
+  nav ul li {
+    flex-grow: 1;
+    margin: 0 0.25em;
+  }
+
+}
+  }
+
+}
