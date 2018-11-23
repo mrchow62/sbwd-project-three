@@ -56,9 +56,24 @@ nav a {
   color: #C70039;
   display: block;
   font-size: 1.25em;
-  padding: 0.333em;
+  padding-bottom: 0.444em;
+  padding-top: 0.444em;
+  align: center;
   text-decoration: none;
+  max-width: 18.889em; /* need no space between links, same height and width when stretched */
 }
+
+  nav a.active {
+  background-color: #1e2124;
+  color: #0676d1;
+}
+
+
+  nav a:hover:not(.active) {
+  background-color: #1e2124;
+  color: #0676d1; /* need to figure out a way to make active link change color */
+}
+
 
 nav ul li {
   text-align: center;
@@ -66,12 +81,15 @@ nav ul li {
 }
 
 ul {
-  padding-bottom: 0.6111111111em;
+  list-style-type: none;
+  margin: 0;
+  padding-bottom: 0;
+
 }
 
 .adidas-images {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column wrap; /* if i remove this i get images side by side but get horizontal scroll */
   padding: 5px
 }
 
@@ -82,7 +100,7 @@ ul {
 
 .nike-images {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column wrap; /* if i remove this i get images side by side but get horizontal scroll */
   padding: 5px
 }
 
@@ -91,9 +109,35 @@ ul {
   padding-top: 5px;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 484px){
+  nav ul {
+    display: flex;
+    margin: 0 -0.25em;
+    }
+
+  nav ul li {
+    flex-grow: 1;
+    margin: 0 0.25em;
+    padding-left: 0.333em;
+    padding-right: 0.333em;
+  }
+
+  /* nav{
+    padding: 0 0.8em;   Not sure if i need this section
+  }
+
+  nav a{
+    padding-bottom: 0, 1em;  Not sure if i need this section 
+
+  }
+  */
+
+}
+
+@media screen and (min-width: 642px){
   img{
-    max-width: 540px;
+    display: inline-flex;
+    max-width: 300px;
     margin: 0 auto;
   }
   .adidas-images{
@@ -105,24 +149,8 @@ ul {
     padding: 5px;
     }
 
-  nav{
-    padding: 0 0.8em;
-  }
 
-  nav a{
-    padding-bottom: 0, 1em;
-  }
 
-  nav ul {
-    display: flex;
-    margin: 0 -0.25em;
-    }
-
-  nav ul li {
-    flex-grow: 1;
-    margin: 0 0.25em;
-
-  }
 
 }
   }
