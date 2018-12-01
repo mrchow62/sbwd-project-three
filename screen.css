@@ -47,6 +47,7 @@ img {
   image-orientation: from-image;
   max-width: 100%;
   padding-bottom: 0.611111111111em;
+  padding-top: 0.611111111111em;
 
 }
 
@@ -81,15 +82,15 @@ nav ul li {
   padding-bottom: 11px;
 }
 
-#nav-intro{
+/* #nav-intro{
   background-color: #1e2124;
   color: #0676d1;
-}
+} */
 
 ul {
   list-style-type: none;
   margin: 0;
-  padding-bottom: 0;
+  padding-top:;
 
 }
 
@@ -184,6 +185,12 @@ ul {
   .colehaan-images li{
       flex: 1 1 300px;
       padding: 5px;
+  }
+
+  .storeimages{
+    
+    justify-content: center;
+    max-width: 65%;
   }
 
 
