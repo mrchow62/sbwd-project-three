@@ -88,15 +88,15 @@ ul {
 }
 
 .adidas-images {
-  display: flex;
-  flex-flow: column wrap; /* if i remove this i get images side by side but get horizontal scroll */
-  padding: 5px
+  /* display: flex;
+  flex-flow: column wrap; /* if i remove this i get images side by side but get horizontal scroll
+  padding: 5px */
 }
 
-.adidas-images li{
+/* .adidas-images li{
   flex: 1 1 300px;
   padding-top: 5px;
-}
+} */
 
 .nike-images {
   display: flex;
@@ -127,7 +127,7 @@ ul {
   }
 
   nav a{
-    padding-bottom: 0, 1em;  Not sure if i need this section 
+    padding-bottom: 0, 1em;  Not sure if i need this section
 
   }
   */
@@ -136,18 +136,49 @@ ul {
 
 @media screen and (min-width: 642px){
   img{
-    display: inline-flex;
-    max-width: 300px;
+    display: block;
+    justify-content: center;
+    max-width:;
     margin: 0 auto;
   }
   .adidas-images{
+    display: flex;
     flex: 50%;
+    flex-flow:row wrap;
+    flex-grow: 1;
     padding: 5px;
   }
+
+  .adidas-images li{
+    flex: 1 1 300px;
+    padding: 5px;
+  }
+
   .nike-images{
+    display: flex;
     flex: 50%;
+    flex-flow:row wrap;
+    flex-grow: 1;
     padding: 5px;
     }
+
+  .nike-images li{
+      flex: 1 1 300px;
+      padding: 5px;
+  }
+
+  .colehaan-images{
+    display: flex;
+    flex: 50%;
+    flex-flow:row wrap;
+    flex-grow: 1;
+    padding: 5px;
+  }
+  .colehaan-images li{
+      flex: 1 1 300px;
+      padding: 5px;
+  }
+
 
 
 
