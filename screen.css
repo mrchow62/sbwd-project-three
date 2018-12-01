@@ -66,6 +66,7 @@ nav a {
   nav a.active {
   background-color: #1e2124;
   color: #0676d1;
+  font-size: 15px; /* this is a dummy for something */
 }
 
 
@@ -78,6 +79,11 @@ nav a {
 nav ul li {
   text-align: center;
   padding-bottom: 11px;
+}
+
+#nav-intro{
+  background-color: #1e2124;
+  color: #0676d1;
 }
 
 ul {
@@ -112,6 +118,7 @@ ul {
 @media screen and (min-width: 484px){
   nav ul {
     display: flex;
+    justify-content: center;
     margin: 0 -0.25em;
     }
 
