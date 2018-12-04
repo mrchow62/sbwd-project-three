@@ -61,7 +61,6 @@ nav a {
   padding-top: 0.444em;
   align: center;
   text-decoration: none;
-  max-width: 18.889em; /* need no space between links, same height and width when stretched */
 }
 
   /* nav a.active {
@@ -94,9 +93,9 @@ ul {
 
 }
 
-#shoe-introduction #nav-intro a,
-#shoe-locations #nav-loc a,
-#shoe-care #nav-care a,
+#shoe-introduction #nav-intro,
+#shoe-locations #nav-loc,
+#shoe-care #nav-care,
 {
   background-color: #1e2124;
   color: #0676d1;
@@ -124,18 +123,20 @@ ul {
   padding-top: 5px;
 }
 
-@media screen and (min-width: 484px){
+@media screen and (min-width: 630px){
   nav ul {
     display: flex;
+    flex-basis: auto;
     justify-content: center;
     margin: 0 -0.25em;
     }
 
   nav ul li {
-    flex-grow: 1;
-    margin: 0 0.25em;
-    padding-left: 0.333em;
-    padding-right: 0.333em;
+
+     flex-grow: 1;
+     margin: 0 0.20em;
+     padding-left: 0.333em;
+     padding-right: 0.333em;
   }
 
   /* nav{
