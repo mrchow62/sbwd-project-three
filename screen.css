@@ -64,11 +64,11 @@ nav a {
   max-width: 18.889em; /* need no space between links, same height and width when stretched */
 }
 
-  nav a.active {
+  /* nav a.active {
   background-color: #1e2124;
   color: #0676d1;
-  font-size: 15px; /* this is a dummy for something */
-}
+  font-size: 15px; /* this is a dummy for something
+} */
 
 
   nav a:hover:not(.active) {
@@ -92,6 +92,14 @@ ul {
   margin: 0;
   padding-top:;
 
+}
+
+#shoe-introduction #nav-intro a,
+#shoe-locations #nav-loc a,
+#shoe-care #nav-care a,
+{
+  background-color: #1e2124;
+  color: #0676d1;
 }
 
 .adidas-images {
@@ -188,7 +196,7 @@ ul {
   }
 
   .storeimages{
-    
+
     justify-content: center;
     max-width: 65%;
   }
