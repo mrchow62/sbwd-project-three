@@ -32,21 +32,49 @@
 
       <figure class="storeimages">
         <ul>
-          <img src="dsw.jpg"
-          alt= "Picture of DSW downtown Chicago store">
+          <img srcset="dsw.jpg, 4000w
+                       dsw-800.jpg, 800w
+                       dsw-650.jpg, 650w"
+               sizes="(max-width: 650px) 610px,
+                       max-width: 800px) 760px,
+                      4000px"
+                src="dsw.jpg"
+          alt= "DSW Storefront">
         </ul>
         <figcaption>
           The DWS store in downtown Chicago.
         </figcaption>
       </figure>
       <figure class="storeimages">
-        <img src="adidas.png"
+        <img srcset="adidaslogo.png, 2000w
+                     adidaslogo-800.png, 800w
+                     adidaslogo-650.png, 650w"
+             sizes="(max-width: 650px) 610px,
+                     max-width: 800px) 760px,
+                    2000px"
+              src="dsw.jpg"
         alt= "Adidas Logo">
+        <figcaption>
+          Adidas Logo
+        </figcaption>
       </figure>
+      <figure class="storeimages">
+        <img srcset="finishline.jpg, 4000w
+                     finishline-800.jpg, 800w
+                     finishline-650.jpg, 650w"
+             sizes="(max-width: 650px) 610px,
+                     max-width: 800px) 760px,
+                    4000px"
+              src="finishline.jpg"
+        alt= "Finishline Storefront">
+        <figcaption>
+          Finishline Store
+        </figcaption>
+
     </main>
 
     <footer id="footer">
-      <small>Site © Advait Joshi</small>
+      <small>Site © Advait Joshi. All images from Wikimedia Commons</small>
     </footer>
 
   <script src= "site.js"></script>
